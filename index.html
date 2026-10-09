@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Chibale | Student Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="hero">
+            <h1>Joseph Chibale</h1>
+            <p>Computer Science Student | Mulungushi University</p>
+            <p>Welcome to my interactive student portfolio for ICT251 Web Technologies.</p>
+            <a href="#projects" class="btn">View My Projects</a>
+        </div>
+        <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Toggle navigation">☰ Menu</button>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#hobbies">My Hobbies</a></li>
+                <li><a href="#learning">My Learning Plan</a></li>
+                <li><a href="#projects">Projects & Skills</a></li>
+                <li><a href="#photos">My Photos</a></li>
+                <li><a href="#media">My Media</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Theme Toggle Switch -->
+        <div class="theme-container">
+            <button id="theme-btn" type="button">Switch to Dark Theme</button>
+        </div>
+
+        <!-- Section 1: About Me -->
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>
+               My Name is Joseph Chibale, Student ID 202511097, and I am a student at Mulungushi University pursuing studies in Information Technology. I am passionate about web programming and software development because it allows me to solve real-world problems through creativity and logic. My goal is to become a full-stack developer who can build responsive, accessible, and user-friendly websites for local businesses in Zambia. In my free time I enjoy learning new technologies and improving my coding skills every day.
+            </p>
+        </section>
+
+        <!-- Section 2: Hobbies -->
+        <section id="hobbies" class="content-section">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li><strong>Software Development:</strong> Crafting Java applications and modern web interfaces.</li>
+                <li><strong>Gaming:</strong> Enjoying competitive racing and action titles.</li>
+                <li><strong>Football:</strong> Following live matches and exploring sports streaming technologies.</li>
+            </ul>
+        </section>
+
+        <!-- Section 3: Learning Plan -->
+        <section id="learning" class="content-section">
+            <h2>My Learning Plan</h2>
+            <ol>
+                <li>Master HTML5 semantic structures, responsive CSS layout, and client-side JavaScript.</li>
+                <li>Build object-oriented software architectures using Java, JavaFX, and Git version control.</li>
+                <li>Deploy full-stack web projects to modern cloud hosting platforms like Render.</li>
+            </ol>
+
+            <h3>Learning Schedule</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course / Subject</th>
+                        <th>Target Competency</th>
+                        <th>Weekly Allocation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ICT251 Web Technologies</td>
+                        <td>JavaScript DOM Manipulation & Responsive CSS</td>
+                        <td>6 Hours</td>
+                    </tr>
+                    <tr>
+                        <td>Java Development</td>
+                        <td>Object-Oriented Programming & JavaFX Applications</td>
+                        <td>8 Hours</td>
+                    </tr>
+                    <tr>
+                        <td>Logic & System Design</td>
+                        <td>Digital Logic Gate Design & Simulink Analysis</td>
+                        <td>4 Hours</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Study Hours Calculator -->
+            <div class="calculator-box">
+                <h3>Study Hours Calculator</h3>
+                <div class="form-group">
+                    <label for="hours-per-day">Planned Study Hours Per Day (1–24):</label>
+                    <input type="number" id="hours-per-day" min="1" max="24">
+                </div>
+                <div class="form-group">
+                    <label for="days-per-week">Days Per Week (1–7):</label>
+                    <input type="number" id="days-per-week" min="1" max="7">
+                </div>
+                <button id="calc-btn" type="button">Calculate Total Weekly Hours</button>
+                <p id="calc-result" class="calc-output"></p>
+            </div>
+        </section>
+
+        <!-- Section 4: Projects & Skills -->
+        <section id="projects" class="content-section">
+            <h2>Projects & Skills</h2>
+            <div class="faq-accordion">
+                <button id="acc-btn" type="button" class="accordion-btn">View My Technical Skills Breakdown</button>
+                <div id="acc-content" class="accordion-content">
+                    <p>My skillset includes Java, JavaFX desktop UI creation, CSS Flexbox/Grid responsive layouts, Git version management, and Simulink digital circuit design.</p>
+                </div>
+            </div>
+
+            <div class="project-list">
+                <article class="project-card">
+                    <h3>SimpleJavaFXApp</h3>
+                    <p>A desktop application demonstrating custom user interface controls and Gradle build setup.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Interactive Personal Website</h3>
+                    <p>A responsive portfolio built using HTML5, CSS3, and JavaScript features with local client validation.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Life Manager Application</h3>
+                    <p>A personal task management software program developed in Java using standard IDE tools.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section 5: Photos -->
+        <section id="photos" class="content-section">
+            <h2>My Photos</h2>
+            <div class="gallery">
+                <figure>
+                    <img id="gallery-img" src="images/photo1.jpg" alt="University study workspace setup">
+                    <figcaption id="gallery-caption">My Special Picture</figcaption>
+                </figure>
+                 <figure>
+                    <img id="gallery-img" src="images/photo2.jpg" alt="University study workspace setup">
+                    <figcaption id="gallery-caption">My Favorite Picture</figcaption>
+                </figure>
+                 <figure>
+                    <img id="gallery-img" src="images/photo3.jpg" alt="University study workspace setup">
+                    <figcaption id="gallery-caption">My Best Picture</figcaption>
+                </figure>
+                <div class="gallery-controls">
+                    <button id="prev-btn" type="button">Previous</button>
+                    <button id="next-btn" type="button">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Media -->
+        <section id="media" class="content-section">
+            <h2>My Media</h2>
+            <article>
+                <h3>Introductory Video Walkthrough</h3>
+                <video controls width="320">
+                    <source src="videos/video1.mp4" type="video/mp4">
+                    Your browser does not support video playback.
+                </video>
+                <p><strong>Summary:</strong> A brief video showing my current web activity project workflow.</p>
+            </article>
+
+            <article>
+                <h3>Audio Self-Introduction</h3>
+                <audio controls>
+                    <source src="videos/audio1.mp3" type="audio/mpeg">
+                    Your browser does not support audio playback.
+                </audio>
+                <audio controls>
+                    <source src="videos/audio2.mp3" type="audio/mpeg">
+                    Your browser does not support audio playback.
+                </audio>
+                <audio controls>
+                    <source src="videos/audio3.mp3" type="audio/mpeg">
+                    Your browser does not support audio playback.
+                </audio>
+                <audio controls>
+                    <source src="videos/audio4.mp3" type="audio/mpeg">
+                    Your browser does not support audio playback.
+                </audio>
+                <p><strong>Summary:</strong> An audio recording summarizing my technical career objectives.</p>
+            </article>
+        </section>
+
+        <!-- Section 7: Contact Form -->
+        <section id="contact" class="content-section">
+            <h2>Contact Me</h2>
+            <p><em>Browser demonstration only — no message is sent.</em></p>
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                    <span class="error" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <span class="error" id="message-error"></span>
+                </div>
+
+                <button type="submit">Submit Form</button>
+            </form>
+
+            <div id="form-preview" class="preview-box" style="display: none;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; @2026 Joseph Chibale(PhD) . All rights reserved.</p>
+        <p><a href="https://github.com/josephchibale102-web/myweb" target="_blank" rel="noopener noreferrer">View Source on GitHub</a></p>
+    </footer>
+
+</body>
+</html>
